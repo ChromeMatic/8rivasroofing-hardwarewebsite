@@ -9,9 +9,9 @@
 <template>
   <section
     v-motion="animation"
-    class="w-full flex justify-center items-center font-GeistMono overflow-hidden"
+    class="w-full flex flex-grow rounded-md justify-center items-center font-GeistMono overflow-hidden "
     :class="useTheme() ? ''
-    :''"
+    :'bg-teal-100'"
   >
       <h2 class="font-[400] text-4xl">
         Website

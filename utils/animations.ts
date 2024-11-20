@@ -15,3 +15,19 @@ export const page_animation ={
         }
     }
 }
+
+export const navigation_animation ={
+    initial:{
+        x:-25,
+        opacity:0
+    },
+    enter:{
+        x:0,
+        opacity:1,
+        transition:{
+            delay:125,
+            type:'spring',
+            stiffness:50
+        }
+    }
+}
