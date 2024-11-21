@@ -5,8 +5,8 @@ import {useTheme} from "~/composables/themeComposable";
 
 <template>
   <section
-    class="flex flex-col flex-grow w-full min-h-svh lg:overflow-hidden"
-    :class="useTheme() ? ''
+    class="flex flex-col flex-grow w-full min-h-svh lg:overflow-hidden transition-all ease-in-out duration-700"
+    :class="useTheme() ? 'bg-innerDark text-white'
     :'bg-yellow-50'"
   >
 

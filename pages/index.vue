@@ -20,18 +20,17 @@
     class="w-full flex flex-grow rounded-md font-GeistMono overflow-hidden "
     :class="useTheme() ? '':'bg-white'"
   >
-     <div class="w-full min-h-96 bg-homepageImg bg-cover bg-center rounded-md flex justify-center items-center p-2">
+     <div class="w-full min-h-96 bg-homepageImg bg-cover bg-center rounded-md flex justify-center items-center lg:p-1">
         <div
-            class="w-full h-full bg-yellow-950/60 flex justify-center items-center rounded-md"
-            :class="useTheme() ? '':'text-white'"
+            class="w-full h-full text-white  flex justify-center items-center rounded-md"
+            :class="useTheme() ? 'bg-innerDark/75'
+            :'lg:bg-yellow-950/60 bg-yellow-950/70'"
         >
-              <h2 class="text-6xl">
+              <h2 class="lg:text-6xl text-3xl text-center">
                 Welcome to 8 Rivas Roofing & Hardware
               </h2>
         </div>
      </div>
-
-
 
   </section>
 </template>

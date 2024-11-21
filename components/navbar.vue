@@ -1,5 +1,6 @@
 <script lang="ts" setup>
   let animation = navigation_animation
+  const theme = useThemeStore()
 
   let options = [
     {
@@ -15,13 +16,15 @@
       route_name:'About Us'
     }
   ]
+
+  function change_theme(){ theme.changeTheme(); }
 </script>
 
 <template>
   <div
     v-motion="animation"
     class="w-full flex py-1 lg:px-16 px-4  justify-between items-center space-x-6 rounded-md"
-    :class="useTheme() ? ''
+    :class="useTheme() ? 'bg-Dark'
     :'bg-white text-teal-800'"
   >
      <div class="flex justify-center items-center space-x-2 font-[400]">
@@ -85,6 +88,7 @@
       </div>
 
     <button
+        @click="change_theme()"
         class="flex justify-center items-center border-2 rounded-md p-2.5"
     >
       <svg
