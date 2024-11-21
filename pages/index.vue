@@ -17,12 +17,21 @@
 <template>
   <section
     v-motion="animation"
-    class="w-full flex flex-grow rounded-md justify-center items-center font-GeistMono overflow-hidden "
-    :class="useTheme() ? ''
-    :'bg-teal-100'"
+    class="w-full flex flex-grow rounded-md font-GeistMono overflow-hidden "
+    :class="useTheme() ? '':'bg-white'"
   >
-      <h2 class="font-[400] text-4xl">
-        Website
-      </h2>
+     <div class="w-full min-h-96 bg-homepageImg bg-cover bg-center rounded-md flex justify-center items-center p-2">
+        <div
+            class="w-full h-full bg-yellow-950/60 flex justify-center items-center rounded-md"
+            :class="useTheme() ? '':'text-white'"
+        >
+              <h2 class="text-6xl">
+                Welcome to 8 Rivas Roofing & Hardware
+              </h2>
+        </div>
+     </div>
+
+
+
   </section>
 </template>

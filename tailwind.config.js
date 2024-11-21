@@ -11,6 +11,16 @@ module.exports ={
     extend: {
       fontFamily:{
         GeistMono:'"Geist Mono", serif'
+      },
+      colors:{
+        Dark: '#202124',
+        innerDark: '#191919',
+        Snow:'#F5FEFD',
+        Daisy:'#FAFAFA',
+        Lace:'F8F2ED'
+      },
+      backgroundImage:{
+        'homepageImg': "url('/public/joshua-tsu-7feYPJMf_Ss-unsplash.jpg')",
       }
     },
   },
