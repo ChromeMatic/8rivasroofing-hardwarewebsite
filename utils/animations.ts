@@ -93,3 +93,27 @@ export const image_movement3 = {
         }
     }
 }
+
+export const leave_animation = {
+    initial:{
+        y:-50,
+        opacity:0,
+    },
+    enter:{
+        y:0,
+        opacity:1,
+        transition:{
+            type:'spring',
+            stiffness:70
+        }
+    },
+    leave:{
+        opacity:0,
+        y:-50,
+        transition:{
+            ease:'ease-in-out',
+            type:'spring',
+            stiffness:70
+        }
+    }
+}

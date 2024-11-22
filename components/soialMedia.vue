@@ -21,7 +21,7 @@
 
 <template>
   <section
-    class="w-full px-4 py-1.5 flex lg:flex-row flex-col lg:space-x-4 space-x-0 space-y-2 lg:space-y-0 justify-center items-center"
+    class="w-full px-4 py-1.5 flex lg:flex-row md:flex-row sm:flex-row flex-col lg:space-x-4 space-x-0 space-y-2 lg:space-y-0 justify-center items-center"
     :class="useTheme() ? 'bg-Dark':'bg-white text-teal-700'"
   >
     <a
