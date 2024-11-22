@@ -27,13 +27,13 @@
 <template>
   <section
     v-motion="animation"
-    class="w-full flex flex-col space-y-1 p-1 rounded-md"
+    class="w-full flex flex-col space-y-1 py-1 px-1.5 rounded-md bg-opacity-80 BlurFill"
     :class="useTheme() ? 'bg-Dark'
     :'bg-white text-teal-800'"
   >
 
      <div
-         class="flex w-full justify-between items-center space-x-6 py-2 lg:px-16 px-4 rounded-md"
+         class="flex w-full justify-between items-center space-x-6 py-2 lg:px-16 px-4 rounded-md bg-opacity-40"
          :class="useTheme() ? 'bg-innerDark':''"
      >
        <button
@@ -50,15 +50,8 @@
          8 Rivas Roofing & Hardware
        </h2>
 
-       <div class="hidden lg:flex justify-center items-center space-x-2 font-[400]">
-         <img
-             src="/logo.jpeg"
-             class="h-[3rem] rounded-tl-2xl rounded-br-2xl transition-all ease-in-out
-          duration-700 border border-gray-200 cursor-pointer
-          hover:scale-105"
-             alt="logo"
-         >
-         <h2>
+       <div class="hidden lg:flex justify-center items-center space-x-2 font-[600] ">
+         <h2 class="overline">
            8 Rivas Roofing & Hardware
          </h2>
        </div>
@@ -70,9 +63,9 @@
              :key="option.route_name"
              :to="option.route"
              class="flex items-center justify-center space-x-1 border-2 rounded-tl-2xl rounded-br-2xl rounded-sm px-4 py-1.5
-              transition-all ease-in-out duration-500 hover:scale-110"
-             :class="useTheme() ? 'bg-innerDark border-teal-950 hover:border-indigo-500 hover:text-indigo-500'
-              :'bg-gray-100 hover:border-green-400 hover:bg-green-50 hover:text-green-500 border-white'"
+             transition-all ease-in-out duration-500 hover:scale-110"
+             :class="useTheme() ? 'bg-innerDark border-teal-950 hover:border-indigo-500 hover:text-indigo-500 hover:shadow-5xl'
+             :'bg-gray-100 hover:border-green-400 hover:bg-green-50 hover:text-green-500 border-white hover:shadow-4xl'"
          >
            <svg
                v-if="option.route_name === 'Home'"

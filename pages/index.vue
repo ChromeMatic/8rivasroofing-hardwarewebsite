@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {image_movement, image_movement2, image_movement3, movement} from "~/utils/animations";
+import {image_movement, image_movement2, image_movement3, movement, stagger_effect} from "~/utils/animations";
 
   definePageMeta({ layout: 'default'})
 
@@ -25,13 +25,32 @@ import {image_movement, image_movement2, image_movement3, movement} from "~/util
     >
       <div class="w-full min-h-[50vh] bg-homepageImg bg-cover bg-center rounded-md flex justify-center items-center">
         <div
-            class="w-full h-full text-white  flex justify-center items-center rounded-md px-2 lg:px-4"
+            class="w-full h-full text-white  flex flex-col space-y-6 justify-center items-center rounded-md px-2 lg:px-4"
             :class="useTheme() ? 'bg-innerDark/75'
             :'lg:bg-yellow-950/60 bg-yellow-950/70'"
         >
-          <h2 class="lg:text-6xl text-3xl text-center">
+
+          <img
+              v-motion="stagger_effect(575,-75,0)"
+              class="lg:h-[12rem] h-[8rem] lg:w-[18rem] w-[9rem] rounded-xl border-2"
+              src="/logo.jpeg"
+              alt="logo"
+          >
+          
+          <h2
+              v-motion="stagger_effect(600,75,0)"
+              class="lg:text-6xl text-3xl text-center font-[500]"
+          >
             Welcome to 8 Rivas Roofing & Hardware
           </h2>
+
+          <p
+              v-motion="stagger_effect(625,75,0)"
+              class="font-[600] text-center"
+          >
+            Your one stop store for your hardware and roofing needs
+          </p>
+          
         </div>
       </div>
     </section>
@@ -40,7 +59,10 @@ import {image_movement, image_movement2, image_movement3, movement} from "~/util
         class="w-full  flex lg:flex-row flex-col justify-center items-center  py-2 px-8 lg:space-x-4 space-x-0 space-y-4 lg:space-y-0"
         :class="useTheme() ? '':'bg-Daisy'"
     >
-        <div class="w-full flex">
+        <div
+            v-motion="stagger_effect(650,0,-75)"
+            class="w-full flex"
+        >
           <div
               v-motion="image_movement"
               class="bg-tools  bg-cover h-96 w-80 border-2 rounded-md z-10 shadow-md "
@@ -57,20 +79,41 @@ import {image_movement, image_movement2, image_movement3, movement} from "~/util
         </div>
 
         <div
-            v-motion="movement"
-            class="w-full border-none h-full flex flex-col justify-center space-y-8 items-start bg-Lace p-4 rounded-md "
-            :class="useTheme() ? 'bg-Dark' : 'bg-white shadow-lg'"
+            class="w-full"
+            v-motion="stagger_effect(700,0,75)"
         >
-          <h1 class="text-3xl"> About Us</h1>
+          <div
+              v-motion="movement"
+              class="w-full border min-h-full flex flex-col justify-center space-y-8 items-start p-4 rounded-2xl"
+              :class="useTheme() ? 'border-2 bg-Dark border-teal-950' : 'bg-Lace shadow-lg'"
+          >
+            <h1 class="text-3xl"> About Us</h1>
 
-          <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis dolorem ducimus eaque eius esse fuga
-            in iste itaque nostrum, officia optio quas, quo reiciendis saepe similique sit vero voluptatem? Excepturi
-            facere illum labore magnam, nobis pariatur quae recusandae tenetur unde voluptas. Odio, quisquam!
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis dolorem ducimus eaque eius esse fuga
+              in iste itaque nostrum, officia optio quas, quo reiciendis saepe similique sit vero voluptatem? Excepturi
+              facere illum labore magnam, nobis pariatur quae recusandae tenetur unde voluptas. Odio, quisquam!
+            </p>
+
+            <NuxtLink
+                to="/aboutUs"
+                class="flex items-center justify-center w-full border-2 p-2 text-lg rounded-md
+              transition-all ease-in-out duration-700 rounded-tl-3xl rounded-br-3xl hover:-translate-y-2 hover:scale-105"
+                :class="useTheme() ? 'bg-innerDark border-Dark text-teal-500 hover:text-indigo-500 hover:border-indigo-500 hover:shadow-5xl'
+              :'bg-gray-100 hover:border-green-400 hover:bg-green-50 hover:text-green-500 border-white hover:shadow-4xl'"
+            >
+              Read More
+            </NuxtLink>
+          </div>
         </div>
 
+
+
     </div>
+
+    <section>
+
+    </section>
 
 
   </section>

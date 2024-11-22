@@ -117,3 +117,23 @@ export const leave_animation = {
         }
     }
 }
+
+export const stagger_effect = (_delay:number,y_axes:number, x_axes:number) => {
+    return {
+        initial: {
+            x: x_axes || 0,
+            y: y_axes || 0,
+            opacity: 0
+        },
+        enter: {
+            y: 0,
+            x: 0,
+            opacity: 1,
+            transition: {
+                delay: _delay,
+                type: 'spring',
+                stiffness: 60
+            }
+        }
+    }
+}
