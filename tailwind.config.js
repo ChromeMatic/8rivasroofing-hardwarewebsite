@@ -21,6 +21,9 @@ module.exports ={
       },
       backgroundImage:{
         'homepageImg': "url('/public/joshua-tsu-7feYPJMf_Ss-unsplash.jpg')",
+        'tools':"url('/public/julie-molliver-Z3vFp7szCAY-unsplash.jpg')",
+        'screws':"url('/public/swers.jpg')",
+        'toolWall':"url('/public/toolsWall.jpg')"
       }
     },
   },

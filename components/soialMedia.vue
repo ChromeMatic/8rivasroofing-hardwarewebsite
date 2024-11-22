@@ -21,8 +21,8 @@
 
 <template>
   <section
-    class="w-full px-4 py-1.5 flex space-x-4 justify-center items-center"
-    :class="useTheme() ? '':'bg-white text-teal-700'"
+    class="w-full px-4 py-1.5 flex lg:flex-row flex-col lg:space-x-4 space-x-0 space-y-2 lg:space-y-0 justify-center items-center"
+    :class="useTheme() ? 'bg-Dark':'bg-white text-teal-700'"
   >
     <a
         v-for="link in links"
@@ -32,12 +32,12 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        <img class="size-12" v-if="link.name === 'Email'" src="/icons8-email-100.png" alt="Email Address" />
-        <img class="size-12" v-if="link.name === 'facebook'" src="/icons8-facebook.svg" alt="Facebook">
-        <img class="size-12" v-if="link.name === 'TikTok'" src="/icons8-tiktok.svg" alt="TikTok">
-        <img class="size-12" v-if="link.name === 'Instagram'" src="/icons8-instagram.svg" alt="Facebook">
+        <img class="lg:size-12 size-6" v-if="link.name === 'Email'" src="/icons8-email-100.png" alt="Email Address" />
+        <img class="lg:size-12 size-6" v-if="link.name === 'facebook'" src="/icons8-facebook.svg" alt="Facebook">
+        <img class="lg:size-12 size-6" v-if="link.name === 'TikTok'" src="/icons8-tiktok.svg" alt="TikTok">
+        <img class="lg:size-12 size-6" v-if="link.name === 'Instagram'" src="/icons8-instagram.svg" alt="Facebook">
 
-        <h2 class="capitalize font-[600]">{{ link.name }}</h2>
+        <h2 class="capitalize font-[600] text-center">{{ link.name }}</h2>
     </a>
   </section>
 </template>

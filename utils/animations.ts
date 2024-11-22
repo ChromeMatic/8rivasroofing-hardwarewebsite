@@ -31,3 +31,65 @@ export const navigation_animation ={
         }
     }
 }
+
+export const movement = {
+    initial:{
+        x:0
+    },
+    enter:{
+        x:4,
+        transition:{
+            duration:2000,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
+}
+
+export const image_movement = {
+    initial:{
+        x:0,
+        y:0
+    },
+    enter:{
+        x:5,
+        y:-6,
+        transition:{
+            duration:2500,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
+}
+
+export const image_movement2 = {
+    initial:{
+        x:0,
+        y:0
+    },
+    enter:{
+        x:-5,
+        y:6,
+        transition:{
+            duration:2500,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
+}
+
+export const image_movement3 = {
+    initial:{
+        x:0,
+        y:0
+    },
+    enter:{
+        x:-2,
+        y:15,
+        transition:{
+            duration:2500,
+            repeat: Infinity,
+            repeatType: 'reverse',
+        }
+    }
+}
