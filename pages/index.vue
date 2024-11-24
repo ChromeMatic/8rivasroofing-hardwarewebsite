@@ -111,8 +111,23 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
 
     </div>
 
-    <section>
+    <section
+        class="w-full flex lg:flex-row flex-col justify-center items-center py-3 px-8 lg:space-x-4 space-x-0 space-y-4 lg:space-y-0"
+        :class="useTheme() ? '':'bg-white'"
+    >
+        <div
+            class="w-full rounded-md p-2 border shadow-md lg:h-full"
+            :class="useTheme() ? 'bg-Dark border-teal-950':'bg-white'"
+        >
 
+        </div>
+
+        <div
+            class="w-full rounded-md p-2 border shadow-md lg:h-full"
+            :class="useTheme() ? 'bg-Dark border-teal-950':'bg-white'"
+        >
+
+        </div>
     </section>
 
 
