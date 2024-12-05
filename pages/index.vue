@@ -17,7 +17,7 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
 <template>
   <section
       v-motion="page_animation"
-      class="w-full flex flex-col space-y-2 rounded-md font-GeistMono overflow-hidden"
+      class="w-full flex flex-col space-y-4 rounded-md font-GeistMono overflow-hidden"
       :class="useTheme() ? '':''"
   >
     <section
@@ -55,6 +55,21 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
       </div>
     </section>
 
+    <section
+        v-motion="stagger_effect(685,0,75)"
+        class="w-full flex flex-col justify-center items-center space-y-5 lg:py-8 py-6 rounded-lg border-2"
+        :class="useTheme() ? 'bg-Dark border-dashed border-teal-900'
+        :'bg-white shadow-lg border-yellow-50'"
+    >
+      <h2 class="text-3xl">
+        Vision Statement
+      </h2>
+
+      <p>
+        Our vision is to be the leading provider of roofing solutions, by meeting all roofing needs with outstanding value and quality.
+      </p>
+    </section>
+
     <div
         class="w-full  flex lg:flex-row flex-col justify-center items-center  py-2 px-8 lg:space-x-4 space-x-0 space-y-4 lg:space-y-0"
         :class="useTheme() ? '':'bg-Daisy'"
@@ -87,12 +102,11 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
               class="w-full border min-h-full flex flex-col justify-center space-y-8 items-start p-4 rounded-2xl"
               :class="useTheme() ? 'border-2 bg-Dark border-teal-950' : 'bg-Lace shadow-lg'"
           >
-            <h1 class="text-3xl"> About Us</h1>
+            <h1 class="text-3xl">About Us</h1>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis dolorem ducimus eaque eius esse fuga
-              in iste itaque nostrum, officia optio quas, quo reiciendis saepe similique sit vero voluptatem? Excepturi
-              facere illum labore magnam, nobis pariatur quae recusandae tenetur unde voluptas. Odio, quisquam!
+              We are dedicated to meeting your roofing needs with exceptional service, quality products, and competitive pricing.
+              Our goal is to deliver tailored solutions and unmatched value, earning your trust as your roofing partner.
             </p>
 
             <NuxtLink
@@ -106,15 +120,7 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
             </NuxtLink>
           </div>
         </div>
-
-
-
     </div>
-
-    <section>
-
-    </section>
-
 
   </section>
 </template>

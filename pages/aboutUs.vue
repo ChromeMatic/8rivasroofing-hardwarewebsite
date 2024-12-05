@@ -6,11 +6,9 @@ definePageMeta({ layout: 'default'})
 <template>
   <section
       v-motion="animation"
-      class="w-full flex flex-grow rounded-md justify-center items-center font-GeistMono overflow-hidden "
+      class="w-full flex flex-col space-y-4 flex-grow rounded-md items-center font-GeistMono overflow-hidden "
       :class="useTheme() ? 'bg-Dark':'bg-white'"
   >
-    <h2 class="font-[400] text-4xl">
-       About Us Page
-    </h2>
+
   </section>
 </template>
