@@ -44,7 +44,7 @@
               :class="useTheme() ? 'bg-innerDark border-dashed border-teal-900'
               :'bg-yellow-50 shadow-lg border-yellow-50'"
           >
-            <p>
+            <p class="text-center">
               Hello there, in this section we will look at the all our different roofing material
             </p>
           </div>
@@ -58,7 +58,7 @@
                  :key="img.img"
                  v-motion="stagger_effect(475*2^index*75,25,0)"
                  class="rounded-md shadow-md h-72 cursor-pointer hover:scale-125"
-                 :class="index===roofImgs.length-1 ? 'col-span-4' : ''"
+                 :class="index===roofImgs.length-1 ? 'lg:col-span-4' : ''"
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
