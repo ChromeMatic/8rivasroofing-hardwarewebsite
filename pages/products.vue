@@ -54,12 +54,11 @@
               :class="useTheme() ? 'bg-Dark' : 'bg-white'"
           >
                 <div
-
                  v-for="(img,index) in roofImgs"
                  :key="img.img"
                  v-motion="stagger_effect(475*2^index*75,25,0)"
                  class="rounded-md shadow-md h-72 cursor-pointer hover:scale-125"
-                 :class="index===roofImgs.length-1 ? 'col-span-4' : 'col-span-1'"
+                 :class="index===roofImgs.length-1 ? 'col-span-4' : ''"
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
