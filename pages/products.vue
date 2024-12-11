@@ -26,11 +26,11 @@
       :class="useTheme() ? 'bg-Dark':'bg-white'"
   >
    <section
-       class="px-4 py-8 flex flex-col items-center space-y-4 w-full min-h-full"
+       class="lg:px-4 px-2 lg:py-8 py-4 flex flex-col items-center space-y-4 w-full min-h-full"
        :class="useTheme() ? '':''"
    >
           <h1
-              v-motion="stagger_effect(775,75,0)"
+              v-motion="stagger_effect(775,25,0)"
               class="text-4xl leading-tight overline p-4 rounded-md"
               :class="useTheme() ? 'bg-innerDark'
               :'bg-yellow-50 shadow-lg'"
@@ -39,34 +39,176 @@
           </h1>
 
           <div
-              v-motion="stagger_effect(875,0,75)"
-              class="w-full flex flex-col justify-center items-center space-y-5 lg:py-8 py-6 rounded-lg border-2"
+              v-motion="stagger_effect(875,0,25)"
+              class="w-full flex flex-col justify-center items-center space-y-5 lg:py-8 lg:px-6 px-2 py-6 rounded-lg border-2"
               :class="useTheme() ? 'bg-innerDark border-dashed border-teal-900'
               :'bg-yellow-50 shadow-lg border-yellow-50'"
           >
             <p class="text-center">
-              Hello there, in this section we will look at the all our different roofing material
+              Hello there, in this section we will look at the all our different roofing material.
             </p>
           </div>
 
           <div
-              class="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2"
+              class="w-full grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-2"
               :class="useTheme() ? 'bg-Dark' : 'bg-white'"
           >
                 <div
-                 v-for="(img,index) in roofImgs"
-                 :key="img.img"
-                 v-motion="stagger_effect(475*2^index*75,25,0)"
-                 class="rounded-md shadow-md h-72 cursor-pointer hover:scale-125"
-                 :class="index===roofImgs.length-1 ? 'lg:col-span-4' : ''"
+                 v-motion="stagger_effect(890,25,0)"
+                 class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-3 md:col-span-2 col-span-1"
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="img.img"
-                      :alt="img.img"
+                      :src="roofImgs[0].img"
+                      :alt="roofImgs[0].img"
                   >
                 </div>
+
+                <div
+                    v-motion="stagger_effect(685,-25,0)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[1].img"
+                      :alt="roofImgs[1].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(775,0,-25)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-1 col-span-2"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[2].img"
+                      :alt="roofImgs[2].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(850,25,0)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-3 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[4].img"
+                      :alt="roofImgs[4].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(885,-25,0)"
+                    class="rounded-md shadow-md h-72 cursor-pointer col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[3].img"
+                      :alt="roofImgs[3].img"
+                  >
+                </div>
+
+                <div
+                v-motion="stagger_effect(925,0,-25)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-3 col-span-2"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[5].img"
+                      :alt="roofImgs[5].img"
+                  >
+                </div>
+
+                <div
+                  v-motion="stagger_effect(950,-25,0)"
+                  class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-1 col-span-1"
+              >
+                <img
+                    class="rounded-md object-cover w-full overflow-hidden h-full"
+                    :src="roofImgs[6].img"
+                    :alt="roofImgs[6].img"
+                >
+              </div>
+
+                <div
+                v-motion="stagger_effect(975,-25,0)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-1 md:col-span-1 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[7].img"
+                      :alt="roofImgs[7].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(1025,0,25)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-1 col-span-2"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[8].img"
+                      :alt="roofImgs[8].img"
+                  >
+                </div>
+
+                <div
+                v-motion="stagger_effect(1050,-25,0)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-1 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[9].img"
+                      :alt="roofImgs[9].img"
+                  >
+                </div>
+
+                <div
+                 v-motion="stagger_effect(1050,25,0)"
+                 class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-1 md:col-span-2 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[9].img"
+                      :alt="roofImgs[9].img"
+                  >
+                </div>
+
+                <div
+                v-motion="stagger_effect(1075,25,0)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-1 col-span-2"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[10].img"
+                      :alt="roofImgs[10].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(1115,0,-25)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[11].img"
+                      :alt="roofImgs[11].img"
+                  >
+                </div>
+
+                <div
+                    v-motion="stagger_effect(1125,25,0)"
+                    class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-3 col-span-1"
+                >
+                  <img
+                      class="rounded-md object-cover w-full overflow-hidden h-full"
+                      :src="roofImgs[12].img"
+                      :alt="roofImgs[12].img"
+                  >
+                </div>
+
           </div>
+
    </section>
   </section>
 </template>
