@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import {movement} from "~/utils/animations";
+
   let animation = page_animation
   definePageMeta({ layout: 'default'})
 
@@ -29,25 +31,30 @@
        class="lg:px-4 px-2 lg:py-8 py-4 flex flex-col items-center space-y-4 w-full min-h-full"
        :class="useTheme() ? '':''"
    >
-          <h1
-              v-motion="stagger_effect(775,25,0)"
-              class="text-4xl leading-tight overline p-4 rounded-md"
-              :class="useTheme() ? 'bg-innerDark'
-              :'bg-yellow-50 shadow-lg'"
-          >
-            Our Products
-          </h1>
 
           <div
-              v-motion="stagger_effect(875,0,25)"
-              class="w-full flex flex-col justify-center items-center space-y-5 lg:py-8 lg:px-6 px-2 py-6 rounded-lg border-2"
+              v-motion="stagger_effect(875,-150,0)"
+              class="w-full p-0.5 flex justify-center items-center"
+          >
+            <div
+              v-motion="movement"
+              class="w-full flex flex-col justify-center items-center space-y-4 lg:py-8 lg:px-6 px-2 py-6 rounded-lg border-2"
               :class="useTheme() ? 'bg-innerDark border-dashed border-teal-900'
               :'bg-yellow-50 shadow-lg border-yellow-50'"
-          >
-            <p class="text-center">
-              Hello there, in this section we will look at the all our different roofing material.
-            </p>
+            >
+              <h1
+                  class="text-3xl leading-tight p-4 rounded-md"
+                  :class="useTheme() ? 'bg-innerDark'
+              :'bg-yellow-50 shadow-lg'"
+              >
+                Our Products
+              </h1>
+              <p class="text-center">
+                Hello there, in this section we will take a look at our different roofing materials.
+              </p>
+            </div>
           </div>
+
 
           <div
               class="w-full grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-2"

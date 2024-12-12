@@ -65,7 +65,7 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
         Vision Statement
       </h2>
 
-      <p>
+      <p class="lg:text-start text-center" >
         Our vision is to be the leading provider of roofing solutions, by meeting all roofing needs with outstanding value and quality.
       </p>
     </section>
@@ -94,17 +94,17 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
         </div>
 
         <div
-            class="w-full"
+            class="flex w-full"
             v-motion="stagger_effect(700,0,75)"
         >
           <div
               v-motion="movement"
-              class="w-full border min-h-full flex flex-col justify-center space-y-8 items-start p-4 rounded-2xl"
+              class="w-full border min-h-full flex flex-col justify-center lg:items-start items-center space-y-8 p-4 rounded-2xl"
               :class="useTheme() ? 'border-2 bg-Dark border-teal-950' : 'bg-Lace shadow-lg'"
           >
             <h1 class="text-3xl">About Us</h1>
 
-            <p>
+            <p class="lg:text-start text-center">
               We are dedicated to meeting your roofing needs with exceptional service, quality products, and competitive pricing.
               Our goal is to deliver tailored solutions and unmatched value, earning your trust as your roofing partner.
             </p>
