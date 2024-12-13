@@ -43,9 +43,7 @@
               :'bg-yellow-50 shadow-lg border-yellow-50'"
             >
               <h1
-                  class="text-3xl leading-tight p-4 rounded-md"
-                  :class="useTheme() ? 'bg-innerDark'
-              :'bg-yellow-50 shadow-lg'"
+                  class="text-3xl leading-tight"
               >
                 Our Products
               </h1>

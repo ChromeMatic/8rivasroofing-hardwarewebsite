@@ -6,7 +6,7 @@
   <section
     class="flex flex-col flex-grow w-full min-h-svh  transition-all ease-in-out duration-700"
     :class="useTheme() ? 'bg-innerDark text-white dark'
-    :'bg-yellow-50 light'"
+    :'bg-yellow-200 light'"
   >
 
    <section class="flex flex-grow flex-col w-full min-h-full space-y-1 p-1">

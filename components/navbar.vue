@@ -27,13 +27,13 @@
 <template>
   <section
     v-motion="animation"
-    class="w-full flex flex-col space-y-1 py-1 px-1.5 rounded-md bg-opacity-80 BlurFill"
+    class="w-full flex flex-col space-y-1 py-1 px-1.5 rounded-md BlurFill"
     :class="useTheme() ? 'bg-Dark'
     :'bg-white text-teal-800'"
   >
 
      <div
-         class="flex w-full justify-between items-center space-x-6 py-2 lg:px-16 px-4 rounded-md bg-opacity-40"
+         class="flex w-full justify-between items-center space-x-6 py-2 lg:px-16 px-4 rounded-md "
          :class="useTheme() ? 'bg-innerDark':''"
      >
        <button
