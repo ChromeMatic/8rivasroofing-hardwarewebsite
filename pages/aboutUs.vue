@@ -24,7 +24,7 @@ definePageMeta({ layout: 'default'})
 
           <div
               v-motion="stagger_effect(875,25,50)"
-              class="lg:w-1/2 w-full lg:h-auto h-[24rem] lg:p-4 p-2 rounded-lg flex flex-col  justify-between lg:items-start items-center"
+              class="lg:w-1/2 w-full lg:h-auto  lg:p-4 p-2 rounded-lg flex flex-col  justify-between lg:items-start items-center space-y-6"
               :class="useTheme() ? 'bg-Dark':'bg-white'"
           >
 
@@ -44,9 +44,9 @@ definePageMeta({ layout: 'default'})
               </h2>
             </div>
 
-            <div class="w-ful flex lg:justify-start justify-center space-x-1 items-center">
+            <div class="w-ful flex lg:justify-start justify-center space-y-6 items-center lg:p-2 p-1">
 
-              <p class="leading-loose">
+              <p class="leading-loose text-center">
                 At 8 Rivas Roofing & Hardware, located at 3 Milford Rd, Ocho Rios, St. Ann, Jamaica, our goal is to be the leading provider of roofing solutions.
                 We are dedicated to meeting all your roofing needs with exceptional service, quality products, and competitive pricing. Our tailored solutions
                 and commitment to outstanding value ensure your trust as your roofing partner. We are open Monday to Friday, 9:00 AM to 6:00 PM,
