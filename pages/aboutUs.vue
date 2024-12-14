@@ -49,7 +49,7 @@ definePageMeta({ layout: 'default'})
               <p class="leading-loose text-center">
                 At 8 Rivas Roofing & Hardware, located at 3 Milford Rd, Ocho Rios, St. Ann, Jamaica, our goal is to be the leading provider of roofing solutions.
                 We are dedicated to meeting all your roofing needs with exceptional service, quality products, and competitive pricing. Our tailored solutions
-                and commitment to outstanding value ensure your trust as your roofing partner. We are open Monday to Friday, 9:00 AM to 6:00 PM,
+                and commitment to outstanding value ensure your trust as your roofing partner. We are open Monday to Friday, 8:30 AM to 4:30 PM,
                 ready to serve you with excellence.
               </p>
 
