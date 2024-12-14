@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  import {movement} from "~/utils/animations";
-
   let animation = page_animation
   definePageMeta({ layout: 'default'})
 
