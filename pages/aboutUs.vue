@@ -1,6 +1,8 @@
 <script setup lang="ts">
-let animation = page_animation
-definePageMeta({ layout: 'default'})
+import {image_movement, image_movement3} from "~/utils/animations";
+
+  let animation = page_animation
+  definePageMeta({ layout: 'default'})
 </script>
 
 <template>
@@ -9,14 +11,48 @@ definePageMeta({ layout: 'default'})
       class="w-full flex flex-col  space-y-8 flex-grow rounded-md items-center font-GeistMono overflow-hidden lg:p-4 p-1"
       :class="useTheme() ? 'bg-Dark':'bg-white text-teal-700'"
   >
-          <h1
-              v-motion="stagger_effect(675,-15,0)"
-              class="text-5xl"
-          >
+       <div
+           v-motion="stagger_effect(875,100,0)"
+         class="w-full rounded-lg p-3 border-2 flex flex-col justify-center items-center space-y-4"
+         :class="useTheme() ? 'bg-innerDark border-teal-900 border-dashed'
+         :'bg-yellow-50 border-yellow-50 shadow-lg'"
+       >
+
+          <h1 class="text-5xl">
             About Us
           </h1>
 
+         <p>
+           Here at 8 Rivas Roofing & Hardware, we provide the best roofing and hardware
+           supplies for your project or dream home
+         </p>
+       </div>
+
+
         <div
+            v-motion="stagger_effect(925,-75,0)"
+            class="grid lg:grid-cols-3 grid-cols-2 gap-1 lg:h-72 h-80 w-full"
+            :class="useTheme() ? ''
+            :''"
+        >
+            <div
+                v-motion="image_movement"
+                class="w-full bg-aboutImage1 bg-cover bg-center h-full rounded-lg"
+            ></div>
+
+            <div
+                v-motion="image_movement2"
+                class="w-full bg-aboutImage2 bg-cover bg-center h-full rounded-lg"
+            ></div>
+
+            <div
+                v-motion="image_movement3"
+                class="w-full bg-aboutImage3 bg-cover bg-center h-full lg:col-span-1 col-span-2 rounded-lg"
+            ></div>
+        </div>
+
+        <div
+            v-motion="stagger_effect(675,0,100)"
             class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 lg:space-x-1 space-x-0 w-full border-2 h-full p-1 rounded-lg flex-grow overflow-hidden"
             :class="useTheme() ? 'bg-innerDark border-dashed border-teal-900'
             : 'bg-yellow-200 border-yellow-200 border-dashed'"
