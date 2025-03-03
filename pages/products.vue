@@ -221,6 +221,7 @@
                   >
                 </div>
 
+
             <div
                 v-motion="stagger_effect(1125,25,0)"
                 class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-3 col-span-1"
@@ -231,6 +232,7 @@
                   :alt="roofImgs[8].img"
               >
             </div>
+
 
             <div
                 v-motion="stagger_effect(1125,25,0)"
