@@ -24,7 +24,10 @@ module.exports ={
         'hardware':"url('/public/avi-werde-MBPcedDvYzU-unsplash.jpg')",
         'tools':"url('/public/julie-molliver-Z3vFp7szCAY-unsplash.jpg')",
         'screws':"url('/public/swers.jpg')",
-        'toolWall':"url('/public/toolsWall.jpg')"
+        'toolWall':"url('/public/toolsWall.jpg')",
+        'aboutImage1':"url('/public/1000072089.jpg')",
+        'aboutImage2':"url('/public/1000072090.jpg')",
+        'aboutImage3':"url('/public/1000072160.jpg')",
       },
       boxShadow:{
         '4xl': '-2px 2px #22c55e, -4px 4px #4ade80, -6px 6px #86efac',
