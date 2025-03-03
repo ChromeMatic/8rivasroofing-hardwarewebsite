@@ -48,7 +48,8 @@ import {image_movement, image_movement2, image_movement3, movement, stagger_effe
               v-motion="stagger_effect(625,75,0)"
               class="font-[600] text-center"
           >
-            Your one stop store for your hardware and roofing needs
+            Your one stop store for your hardware and roofing needs.
+
           </p>
           
         </div>
