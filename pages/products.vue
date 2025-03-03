@@ -16,6 +16,17 @@
     { img:'/roof-11.jpeg' },
     { img:'/roof-12.jpeg' },
     { img:'/roof-13.jpeg' },
+    { img:'/roof-14.jpeg' },
+    { img:'/roof-15.jpeg' },
+    { img:'/roof-16.jpeg' },
+    { img:'/roof-17.jpeg' },
+    { img:'/roof-18.jpeg' },
+    { img:'/roof-19.jpeg' },
+    { img:'/roof-19.jpeg' },
+    { img:'/roof-20.jpeg' },
+    { img:'/roof-21.jpeg' },
+    { img:'/roof-22.jpeg' },
+    { img:'/roof-23.jpeg' },
   ]
 </script>
 
@@ -58,12 +69,12 @@
           >
                 <div
                  v-motion="stagger_effect(890,25,0)"
-                 class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-3 md:col-span-2 col-span-1"
+                 class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-2 col-span-1"
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[0].img"
-                      :alt="roofImgs[0].img"
+                      :src="roofImgs[22].img"
+                      :alt="roofImgs[22].img"
                   >
                 </div>
 
@@ -73,8 +84,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[1].img"
-                      :alt="roofImgs[1].img"
+                      :src="roofImgs[21].img"
+                      :alt="roofImgs[21].img"
                   >
                 </div>
 
@@ -84,8 +95,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[2].img"
-                      :alt="roofImgs[2].img"
+                      :src="roofImgs[20].img"
+                      :alt="roofImgs[20].img"
                   >
                 </div>
 
@@ -95,8 +106,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[4].img"
-                      :alt="roofImgs[4].img"
+                      :src="roofImgs[19].img"
+                      :alt="roofImgs[19].img"
                   >
                 </div>
 
@@ -106,8 +117,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[3].img"
-                      :alt="roofImgs[3].img"
+                      :src="roofImgs[18].img"
+                      :alt="roofImgs[18].img"
                   >
                 </div>
 
@@ -117,8 +128,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[5].img"
-                      :alt="roofImgs[5].img"
+                      :src="roofImgs[17].img"
+                      :alt="roofImgs[17].img"
                   >
                 </div>
 
@@ -128,8 +139,8 @@
               >
                 <img
                     class="rounded-md object-cover w-full overflow-hidden h-full"
-                    :src="roofImgs[6].img"
-                    :alt="roofImgs[6].img"
+                    :src="roofImgs[16].img"
+                    :alt="roofImgs[16].img"
                 >
               </div>
 
@@ -139,8 +150,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[7].img"
-                      :alt="roofImgs[7].img"
+                      :src="roofImgs[15].img"
+                      :alt="roofImgs[15].img"
                   >
                 </div>
 
@@ -150,8 +161,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[8].img"
-                      :alt="roofImgs[8].img"
+                      :src="roofImgs[14].img"
+                      :alt="roofImgs[14].img"
                   >
                 </div>
 
@@ -161,8 +172,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[9].img"
-                      :alt="roofImgs[9].img"
+                      :src="roofImgs[13].img"
+                      :alt="roofImgs[13].img"
                   >
                 </div>
 
@@ -172,8 +183,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[9].img"
-                      :alt="roofImgs[9].img"
+                      :src="roofImgs[12].img"
+                      :alt="roofImgs[12].img"
                   >
                 </div>
 
@@ -183,8 +194,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[10].img"
-                      :alt="roofImgs[10].img"
+                      :src="roofImgs[11].img"
+                      :alt="roofImgs[11].img"
                   >
                 </div>
 
@@ -194,8 +205,8 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[11].img"
-                      :alt="roofImgs[11].img"
+                      :src="roofImgs[10].img"
+                      :alt="roofImgs[10].img"
                   >
                 </div>
 
@@ -205,10 +216,32 @@
                 >
                   <img
                       class="rounded-md object-cover w-full overflow-hidden h-full"
-                      :src="roofImgs[12].img"
-                      :alt="roofImgs[12].img"
+                      :src="roofImgs[9].img"
+                      :alt="roofImgs[9].img"
                   >
                 </div>
+
+            <div
+                v-motion="stagger_effect(1125,25,0)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-3 col-span-1"
+            >
+              <img
+                  class="rounded-md object-cover w-full overflow-hidden h-full"
+                  :src="roofImgs[8].img"
+                  :alt="roofImgs[8].img"
+              >
+            </div>
+
+            <div
+                v-motion="stagger_effect(1125,25,0)"
+                class="rounded-md shadow-md h-72 cursor-pointer lg:col-span-2 md:col-span-3 col-span-1"
+            >
+              <img
+                  class="rounded-md object-cover w-full overflow-hidden h-full"
+                  :src="roofImgs[7].img"
+                  :alt="roofImgs[7].img"
+              >
+            </div>
 
           </div>
 
